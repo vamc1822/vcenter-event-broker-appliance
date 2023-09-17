@@ -1,19 +1,19 @@
 {
     "veba": {
-        "version": "v0.7.4"
+        "version": "v0.7.5"
     },
     "vmware-event-router": {
-        "gitRepoTag": "v0.7.4",
+        "gitRepoTag": "v0.7.5",
         "containers": [{
             "name": "us.gcr.io/daisy-284300/veba/router",
-            "version": "v0.7.4"
+            "version": "v0.7.5"
         }]
     },
     "veba-ui": {
         "gitRepoTag": "v0.0.0",
         "containers": [{
             "name": "projects.registry.vmware.com/veba/veba-ui",
-            "version": "2802221f"
+            "version": "c2eecec0"
         }]
     },
     "antrea": {
@@ -67,10 +67,6 @@
                 "version": "3.8"
             },
             {
-                "name": "registry.k8s.io/pause",
-                "version": "3.7"
-            },
-            {
                 "name": "registry.k8s.io/etcd",
                 "version": "3.5.6-0"
             },
@@ -82,6 +78,9 @@
     },
     "knative-cli": {
         "version": "v1.8.1"
+    },
+    "knative-vsphere-cli": {
+        "version": "v0.37.1"
     },
     "knative-serving": {
         "gitRepoTag": "v1.8.3",
@@ -226,6 +225,37 @@
                 "version": "latest"
             }
         ]
+    },
+    "tanzu-sources": {
+        "gitRepoTag": "v0.37.1",
+        "containers": [{
+            "name": "ghcr.io/vmware-tanzu/sources-for-knative/horizon-controller:v0.37.1@sha256",
+            "version": "ed68579626a4641ea721637ca801ff98eae3b3753449f5a481f63a647d6a5502"
+            },
+            {
+                "name": "ghcr.io/vmware-tanzu/sources-for-knative/horizon-webhook:v0.37.1@sha256",
+                "version": "f3cd8353cabf657dd5ff6af035c83f2bcf8ce759480f9cc7853701a4e15577bd"
+            },
+            {
+                "name": "ghcr.io/vmware-tanzu/sources-for-knative/horizon-adapter:v0.37.1@sha256",
+                "version": "ea652efce54a1c40b94e4812b464b0cb085b0c5193f0ecbfe0e0f2c88c133495"
+            },
+            {
+                "name": "ghcr.io/vmware-tanzu/sources-for-knative/vsphere-controller:v0.37.1@sha256",
+                "version": "a923012b58b81272ced645240f41de07e50656d5083755a23c82d9171d1c0aed"
+            },
+            {
+                "name": "ghcr.io/vmware-tanzu/sources-for-knative/vsphere-adapter:v0.37.1@sha256",
+                "version": "c5b0145aa13c5ac9d57524638cc1227abc4ab741978ac223a039e824c97e1083"
+            }
+        ]
+    },
+    "contour-authserver": {
+        "gitRepoTag": "v2",
+        "containers": [{
+            "name": "docker.io/projectcontour/contour-authserver",
+            "version": "v2"
+        }]
     },
     "tinywww": {
         "gitRepoTag": "master",
